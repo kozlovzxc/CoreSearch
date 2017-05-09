@@ -36,10 +36,10 @@ function getClientCertificate(ip, port, host) {
             constants.SSL_OP_NO_SSLv3 |
             constants.SSL_OP_NO_TLSv1
     }, function() {
-        let cert = s.getPeerCertificate();
-        let m = bignum(cert.modulus, 16);
-        let e = bignum(cert.exponent, 10);
-        let primeSize = cert.modulus.length / 4;
+        var cert = s.getPeerCertificate();
+        var m = bignum(cert.modulus, 16);
+        var e = bignum(cert.exponent, 10);
+        var primeSize = cert.modulus.length / 4;
 
         console.error('Cert loaded...');
 
