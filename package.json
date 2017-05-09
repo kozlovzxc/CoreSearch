@@ -10,9 +10,12 @@
   "author": "Kozlov Nikita <kozlovzxc@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "asn1.js": "~0.3.0",
-    "asn1.js-rfc3280": "~0.3.0",
-    "bignum": "~0.6.2",
-    "yargs": "~1.2.1"
+    "asn1.js": "~4.9.1",
+    "asn1.js-rfc3280": "~4.0.0",
+    "bignum": "~0.12.5",
+    "yargs": "~8.0.1"
+  },
+  "bin": {
+    "coreSearch": "/bin/coreSearch.js" 
   }
 }
