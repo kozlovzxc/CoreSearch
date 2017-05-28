@@ -38,7 +38,7 @@ function getClientCertificate(ip, port, host) {
     }, function() {
         var cert = s.getPeerCertificate();
         var m = bignum(cert.modulus, 16);
-        var e = bignum(cert.exponent, 10);
+        var e = bignum(cert.exponent, 16);
         var primeSize = cert.modulus.length / 4;
 
         console.error('Cert loaded...');
